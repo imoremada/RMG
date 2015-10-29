@@ -15,4 +15,12 @@
 		<put-attribute name="title" value="Welcome" />
 		<put-attribute name="body" value="/WEB-INF/jsps/Home.jsp" />
 	</definition> 
+	<definition name="error" extends="baseLayout">
+		<put-attribute name="title" value="Error ! ! !" />
+		<put-attribute name="body" value="/WEB-INF/jsps/Error.jsp" />
+	</definition> 
+	<definition name="addRole" extends="baseLayout">
+		<put-attribute name="title" value="Add Role" />
+		<put-attribute name="body" value="/WEB-INF/jsps/AddRole.jsp" />
+	</definition> 
 </tiles-definitions>

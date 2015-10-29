@@ -2,25 +2,23 @@ package com.rmg.web.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.rmg.api.dao.UserDAO;
-import com.rmg.api.domain.User;
+import com.rmg.api.domain.Employee;
 
 public class LoginAction extends ActionSupport {
 	
-	private User user;
+	private Employee employee;
 	private UserDAO userDAO;
-	LoginAction()
-	{
-	}
-	public String check(){
+	
+	public String login(){
 		System.out.println("here we go");
-		System.out.println("User name = "+ user.getUsername());
+		System.out.println("User name = "+ employee.getUsername());
 		return ERROR;
 	}
-	public User getUser() {
-		return user;
+	public Employee getEmployee() {
+		return employee;
 	}
-	public void setUser(User user) {
-		this.user = user;
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
 	}
 	public UserDAO getUserDAO() {
 		return userDAO;

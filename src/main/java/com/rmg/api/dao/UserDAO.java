@@ -1,8 +1,8 @@
 package com.rmg.api.dao;
 
-import com.rmg.api.domain.User;
+import com.rmg.api.domain.Employee;
 
 public interface UserDAO {
 
-	public boolean checkLogin(User user);
+	public boolean checkLogin(Employee user);
 }

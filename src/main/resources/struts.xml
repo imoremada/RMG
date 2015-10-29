@@ -9,11 +9,13 @@
             <result-type name="tiles"
                 class="org.apache.struts2.views.tiles.TilesResult" />
         </result-types>
-        <!-- <action name="*Login" class="loginActionBean" method="{1}"> -->
-        <action name="login" class="loginActionBean" method="check">
+       <action name="*Do" class="loginActionBean" method="{1}">
             <result name="success" type="tiles">home</result>
             <result name="error" type="tiles">home</result>
         </action>
-         
+          <action name="*Go" class="roleManagementAction" method="{1}">
+          <result name="success" type="tiles">addRole</result>
+            <result name="error" type="tiles">error</result>
+        </action>
     </package>
 </struts>

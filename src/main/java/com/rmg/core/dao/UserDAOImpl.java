@@ -1,7 +1,7 @@
 package com.rmg.core.dao;
 
 import com.rmg.api.dao.UserDAO;
-import com.rmg.api.domain.User;
+import com.rmg.api.domain.Employee;
 
 public class UserDAOImpl implements UserDAO{
 
@@ -9,7 +9,7 @@ public class UserDAOImpl implements UserDAO{
 	{
 		System.out.println("UserDAOImpl");
 	}
-	public boolean checkLogin(User user) {
+	public boolean checkLogin(Employee user) {
 		return false;
 	}
 

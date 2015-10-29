@@ -8,7 +8,7 @@
 <title>Ransiri Motor Garage | Home</title>
 </head>
 <body>
-	<s:form action="login.action" method="post">
+	<s:form action="loginDo.action" method="post">
 		<s:textfield label="Username" name="user.username" />
 	    <s:password label="Password" name="user.password" />
 	    <s:submit value="Login" />
