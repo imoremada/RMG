@@ -30,11 +30,11 @@
 		p:url="${jdbc.databaseurl}" p:username="${jdbc.username}" p:password="${jdbc.password}" />
 
 	<bean id="loginActionBean" class="com.rmg.web.action.LoginAction">
-		<property name="userDAO" ref="userDAO" />
+		<property name="employeeDAO" ref="employeeDAO" />
 		<property name="employee" ref="employee" />
 	</bean>
 	<bean id="employee" class="com.rmg.api.domain.Employee" />
-	<bean id="userDAO" class="com.rmg.core.dao.UserDAOImpl" />
+	<bean id="employeeDAO" class="com.rmg.core.dao.EmployeeDAOImpl" />
 	<bean id="roleDAO" class="com.rmg.core.dao.RoleDAOImpl" />
 	<bean id="role" class="com.rmg.api.domain.Role" />
 	<bean id="roleManagementAction" class="com.rmg.web.action.RoleManagementAction">

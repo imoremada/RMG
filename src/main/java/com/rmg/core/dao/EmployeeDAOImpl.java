@@ -1,11 +1,11 @@
 package com.rmg.core.dao;
 
-import com.rmg.api.dao.UserDAO;
+import com.rmg.api.dao.EmployeeDAO;
 import com.rmg.api.domain.Employee;
 
-public class UserDAOImpl implements UserDAO{
+public class EmployeeDAOImpl implements EmployeeDAO{
 
-	UserDAOImpl()
+	EmployeeDAOImpl()
 	{
 		System.out.println("UserDAOImpl");
 	}
